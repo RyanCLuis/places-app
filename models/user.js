@@ -1,7 +1,7 @@
 ///////////////////////////////////
 // Our Schema and dependencies ////
 ///////////////////////////////////
-const mongoose = require('../utils/connection')
+const mongoose = require('../utils/connections')
 
 // destructuring the Schema and model from mongoose
 const { Schema, model } = mongoose
