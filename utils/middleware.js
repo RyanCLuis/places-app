@@ -39,18 +39,18 @@ const middleware = (app) => {
         // store - tells connect-mongo where to save the session(our db)
         // the two other options can be read about in the connect-mongo docs
         // but they're not worth wasting brain space on rn.
-    app.use(
-        session({
-            secret: process.env.SECRET,
-            store: MongoStore.create({
-                mongoUrl: process.env.DATABASE_URL
-            }),
-            saveUninitialized: true,
-            resave: false
-        })
-    )
-}
-
+        app.use(
+            session({
+                secret: process.env.SECRET,
+                store: MongoStore.create({
+                    mongoUrl: process.env.DATABASE_URL
+                }),
+                saveUninitialized: true,
+                resave: false
+            })
+        )
+    }
+    
 //////////////////////////////////////////
 // Export the Middleware Function     ////
 //////////////////////////////////////////

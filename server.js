@@ -41,7 +41,7 @@ app.use('/places', PlaceRouter)
 // error page
 // app.get('*') // catch all pages for error
 app.get('/error', (req, res) => {
-    const error = req.query.error || 'Something went wrong...try again'
+    const error = req.query.error || 'Ope! Something went wrong...try again'
 
     const { username, loggedIn, userId } = req.session
 
